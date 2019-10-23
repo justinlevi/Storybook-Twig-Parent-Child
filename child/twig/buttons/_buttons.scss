@@ -1,0 +1,40 @@
+// Buttons
+
+.buttonBase {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &>a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.button {
+  @extend .buttonBase;
+  background: lightblue;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background: darken(darkgray, 10%);
+  }
+}
+
+.buttonMobile {
+  @extend .buttonBase;
+  padding: 20px 20px;
+
+  &:hover {
+    border: 1px solid #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
